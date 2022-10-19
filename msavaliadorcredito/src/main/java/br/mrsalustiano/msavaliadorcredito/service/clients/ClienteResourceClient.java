@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import br.mrsalustiano.msavaliadorcredito.dto.DadosCliente;
 
-@FeignClient(value = "mscartoes" , path= "/cartoes")
+@FeignClient(value = "msclientes" , path= "/clientes")
 public interface ClienteResourceClient {
 	
 	@GetMapping(params = "cpf")
